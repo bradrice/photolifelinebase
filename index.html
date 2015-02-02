@@ -13,6 +13,7 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <link rel="stylesheet" href="includes/css/bootstrap.min.css">
+        <link rel="stylesheet" href="includes/css/bootstrap-datetimepicker.min.css">
         <!-- main style sheet, use for look and feel on top of what bootstrap provides -->
         <link rel="stylesheet" href="includes/css/style.css">
         <script src="includes/js/vendor/modernizr-2.6.2.min.js"></script>
@@ -22,20 +23,423 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <div class="container">
-            <div class="col-sm-12">
-                <div class="jumbotron">
-                    <h1>Webstart template</h1>
-                    <h2>Using jquery, bootstrap and modernizr</h2>
-                    <!-- Add your site or application content here -->
-                    <p>Hello world! This is HTML5 Boilerplate.</p>
+            <header class="row">
+            <div class="col-sm-24 header">
+                <div class="brand col-sm-8">
+                    <div id="logo">
+                        <img src="includes/images/brand_image.jpg" id="feature_img" alt="Photographer">
+                        <img src="includes/images/pl_logo_red.png"  id="logo_img" alt="PL logo">
+                    </div>
+                </div>
+                <div class="col-sm-8">
+                    <button type="button" class="btn btn-default">Pending</button>
+                    <button type="button" class="btn btn-default">Reminders</button>
+                    <button type="button" class="btn btn-default">Create Reminder</button>
+                    <div id="welcome">
+                        <p>Welcome Brad</p>
+                    </div>
+                </div>
+                <div class="col-sm-8" id="account_btns">
+                    <button type="button" class="btn btn-default">Account</button>
+                    <button type="button" class="btn btn-default">Log out</button>
+                    <form action="search.aspx" class="form-inline">
+                     <div class="form-group search_area">
+                        <input type="text" class="form-control" name="search" id="search_field" placeholder="Search...">
+                        <label for="search" class="btn btn-default">Search</label>
+                    </div>
+                    </form>
+                </div>
+            </div><!-- end col-24-sm -->
+            </header>
+            <div class="row">
+            <div class="col-sm-24">
+
+                <nav class="navbar navbar-default">
+                  <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                      </button>
+                      <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-home"/></a>
+                    </div>
+
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                      <ul class="nav navbar-nav">
+                        <li class="active"><a href="/NewInquiry.aspx"><span class="glyphicon glyphicon-earphone"/>Inquiry</a></li>
+                        <li><a href="/Opportunities.aspx"><span class="glyphicon glyphicon-hand-right"/>Opportunity</a></li>
+                        <li><a href="/Prospects.aspx"><span class="glyphicon glyphicon-thumbs-up" />Prospect</a></li>
+                        <li><a href="/Clients.aspx"><span class="glyphicon glyphicon-briefcase" />Client</a></li>
+                        <li><a href="/Scheduling.aspx"><span class="glyphicon glyphicon-pushpin" />Schedule</a></li>
+                        <li><a href="/Jobs.aspx"><span class="glyphicon glyphicon-pencil" />Job</a></li>
+                        <li><a href="/Orders.aspx"><span class="glyphicon glyphicon-list-alt"/>Order</a></li>
+                        <li><a href="/Invoicing.aspx"><span class="glyphicon glyphicon-envelope" />Invoice</a></li>
+                        <li><a href="/Reports/DefaultReport.aspx"><span class="glyphicon glyphicon-signal" />Report</a></li>
+                        <li><a href="/Maintenance/DefaultMaintenance.aspx" class="last"><span class="glyphicon glyphicon-transfer" />Maintenance</a></li>
+                        
+                      </ul>
+                    </div><!-- /.navbar-collapse -->
+                  </div><!-- /.container-fluid -->
+                </nav>
+
+            </div><!-- end 24 col -->
+        </div><!-- end row -->
+        
+        <div class="row" id="main-body">
+        <!-- selector checkboxes -->
+            <div class="col-sm-4" id="main-selector">
+                <div class="checkbox">
+                    <label for="family"><input type="checkbox" id="family" name="family">Family</label>
+                </div>
+                <div class="checkbox">
+                    <label for="seniors"><input type="checkbox" id="seniors" name="seinors">Seniors</label>
+                </div>
+                <div class="checkbox">
+                    <label for="maternity"><input type="checkbox" id="maternity" name="maternity">Maternity</label>
+                </div>
+                <div class="checkbox">
+                    <label for="newborn"><input type="checkbox" id="newborn" name="newborn">Newborn</label>
+                </div>
+                <div class="checkbox">
+                    <label for="children"><input type="checkbox" id="children" name="children">Children</label>
+                </div>
+                <div class="checkbox">
+                    <label for="pet"><input type="checkbox" id="pet" name="pet">Pet</label>
+                </div>
+                <div class="checkbox">
+                    <label for="s_sports"><input type="checkbox" id="s_sports" name="s_sports">School Sports</label>
+                </div>
+                <div class="checkbox">
+                    <label for="schools"><input type="checkbox" id="schools" name="schools">Schools</label>
+                </div>
+                <div class="checkbox">
+                    <label for="leagues"><input type="checkbox" id="leagues" name="leagues">Leagues</label>
+                </div>
+                <div class="checkbox">
+                    <label for="wedding"><input type="checkbox" id="wedding" name="wedding">Wedding</label>
+                </div>
+                <div class="checkbox">
+                    <label for="engagement"><input type="checkbox" id="engagement" name="engagement">Engagement</label>
+                </div>
+                <div class="checkbox">
+                    <label for="event"><input type="checkbox" id="event" name="event">Event</label>
+                </div>
+                <div class="checkbox">
+                    <label for="corporate"><input type="checkbox" id="corporate" name="corporate">Corporate</label>
+                </div>
+                <div class="checkbox">
+                    <label for="products"><input type="checkbox" id="products" name="products">Products</label>
+                </div>
+                <div class="checkbox">
+                    <label for="architecture"><input type="checkbox" id="architecture" name="architecture">Architecture</label>
+                </div>
+                <div class="checkbox">
+                    <label for="households"><input type="checkbox" id="households" name="households">Households</label>
+                </div>
+                <div class="checkbox">
+                    <label for="headshots"><input type="checkbox" id="headshots" name="headshots">Headshots</label>
+                </div>
+                <div class="checkbox">
+                    <label for="talent-portfolio"><input type="checkbox" id="talent-portfolio" name="talent-portfolio">Talent Portfolio</label>
+                </div>
+                <div class="checkbox">
+                    <label for="pro-bono"><input type="checkbox" id="pro-bono" name="pro-bono">Pro Bono</label>
+                </div>
+            </div>
+            <div class="col-sm-14">
+            <fieldset class="col-sm-24">
+                <legend>Personal information</legend>
+                <div class="form-group col-sm-24">
+                <label for="first_name">First Name</label>
+                <input type="text" class="form-control" id="first_name" placeholder="First Name">
+              </div>
+              <div class="form-group col-sm-24">
+                <label for="last_name">Last Name</label>
+                <input type="text" class="form-control" id="last_name" placeholder="Last Name">
+              </div>
+              <div class="form-group col-sm-8">
+                <label for="phone">Phone</label>
+                <input type="text" class="form-control" id="phone" placeholder="Last Name">
+              </div>
+              <div class="form-group col-sm-4">
+                <label for="text_ok">OK Text</label>
+                <input type="checkbox" class="form-control" id="text_ok">
+              </div>
+              <div class="form-group col-sm-8">
+                <label for="alt_phone">Alternate Phone</label>
+                <input type="text" id="alt_phone" class="form-control" placeholder="Alt Phone">
+              </div>
+              <div class="form-group col-sm-4">
+                <label for="alt_text_ok">OK Text</label>
+                <input type="checkbox" class="form-control" id="alt_text_ok">
+              </div>
+              <div class="form-group col-sm-20">
+                <label for="alt_phone">Email</label>
+                <input type="email" id="email" class="form-control" placeholder="Email">
+              </div>
+              <div class="form-group col-sm-4">
+                <label for="past_client">Past client</label>
+                <input type="checkbox" class="form-control" id="past_client">
+              </div>
+            </fieldset>
+
+            <!-- senior info  -->
+            <fieldset class="col-sm-24">
+                <legend>Senior portrait information</legend>
+                <div class="row">
+                   <div class="btn-group btn-toggle col-sm-12" data-toggle="buttons">
+                   <div><label>Gender</label></div>
+                    <label class="btn btn-primary active">
+                      <input type="radio" name="options" value="male"> Male
+                    </label>
+                    <label class="btn btn-default">
+                      <input type="radio" name="options" value="female" checked=""> Female
+                    </label>
+                  </div>
+                <div class="col-sm-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                <label for="request_date">Requested date</label>
+                                    <div class='input-group date' id='datetimepicker1'>
+                                        <input type='text' id="request_date" class="form-control" />
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                </div><!-- end row -->
+                
+                <div class="row">
+                    <div class="form-group col-sm-24">
+                        <label for="first_name">First Name</label>
+                        <input type="text" class="form-control" id="first_name" placeholder="First Name">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-24">
+                        <label for="last_name">Last Name</label>
+                        <input type="text" class="form-control" id="last_name" placeholder="Last Name">
+                    </div>
+                </div>
+              <div class="row">
+                  <div class="form-group col-sm-12">
+                <label for="last_name">Needed by</label>
+                <input type="text" class="form-control" id="needed_by" placeholder="Needed by">
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="class_of" >Class of</label>
+                <select id="class_of" class="form-control">
+                    <option value=""></option>
+                    <option value="2015">2015</option>
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                </select>                   
+              </div>
+              <div class="form-group col-sm-6">
+                <label for="class_of">Session type</label>
+                <select id="session_type" class="form-control">
+                    <option value=""></option>
+                    <option value="studio">In Studio</option>
+                    <option value="outdoor">Outdoors</option>
+                    <option value="on_location">On location</option>
+                    <option value="joint_session">Joint session</option>
+                </select>                   
+              </div>
+              </div>
+              <div class="row">
+                  <div class="form-group col-sm-8">
+                <label for="s_phone">Student Phone</label>
+                <input type="text" class="form-control" id="s_phone" placeholder="Student phone">
+              </div>
+              <div class="form-group col-sm-4">
+                <label for="s_text_ok">OK Text</label>
+                <input type="checkbox" class="form-control" id="s_text_ok">
+              </div>
+              <div class="form-group col-sm-12">
+                <label for="s_email">Student Email</label>
+                <input type="email" id="s_email" class="form-control" placeholder="Email">
+              </div>
+              </div>
+
+              <div class="row">
+                  <div class="form-group col-sm-24">
+                      <label for="s_location_notes">Location notes</label>
+                        <textarea class="form-control" id="s_location_notes" rows="3"></textarea>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="form-group col-sm-12">
+                      <label for="s_email">Session fee quoted</label>
+                    <input type="email" id="s_fee_quote" class="form-control" placeholder="Session fee quote">
+                  </div>
+                  <div class="form-group col-sm-12">
+                      <label for="s_campain_response">In response to campaign</label>
+                     <select id="s_campain_response" class="form-control">
+                        <option value=""></option>
+                        <option value="v1">val 1</option>
+                        <option value="v2">val 2</option>
+                        <option value="v3">val 3</option>
+                        <option value="v4">val 4</option>
+                    </select>
+                  </div>
+              </div>
+
+              <div class="row">
+                  <div class="form-group col-sm-24">
+                      <label for="s_sibs">Siblings names and ages</label>
+                        <textarea class="form-control" id="s_sibs" rows="3"></textarea>
+                  </div>
+              </div>
+
+              <div class="row">
+                      <div class="form-group col-sm-8">
+                        <label for="budget">Budget</label>
+                        <input type="text" class="form-control" id="budget" placeholder="Budget">
+                    </div>
+                      <div class="form-group col-sm-8">
+                        <label for="status">Status</label>
+                        <select id="status" class="form-control">
+                        <option value=""></option>
+                        <option value="v1">val 1</option>
+                        <option value="v2">val 2</option>
+                        <option value="v3">val 3</option>
+                        <option value="v4">val 4</option>
+                    </select>
+                      </div>
+                      <div class="form-group col-sm-8">
+                        <label for="assign_to">Assign to</label>
+                        <select id="assign_to" class="form-control">
+                        <option value=""></option>
+                        <option value="v1">val 1</option>
+                        <option value="v2">val 2</option>
+                        <option value="v3">val 3</option>
+                        <option value="v4">val 4</option>
+                    </select>
+                      </div>
+              </div>
+
+              <div class="row">
+                   <div class="form-group col-sm-12">
+                        <label for="follow_up_type">Status</label>
+                        <select id="follow_up_type" class="form-control">
+                            <option value=""></option>
+                            <option value="v1">val 1</option>
+                            <option value="v2">val 2</option>
+                            <option value="v3">val 3</option>
+                            <option value="v4">val 4</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group col-sm-12">
+                        <label for="follow-up-date">Follow up date</label>
+                        <input type="text" class="form-control" id="follow-up-date" placeholder="Budget">
+                    </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="pl col-sm-24" id="pl">
+            <legend>Photolifeline info</legend>
+                <div class="row">
+                    <div class="form-group col-sm-8">
+                        <label for="pl_familiar">Have they seen our work?</label>
+                        <input type="checkbox" class="form-control" id="pl_familiar">
+                    </div>
+                     <div class="form-group col-sm-8">
+                        <label for="pl_where">Where</label>
+                        <select id="pl_where" class="form-control">
+                            <option value=""></option>
+                            <option value="v1">val 1</option>
+                            <option value="v2">val 2</option>
+                            <option value="v3">val 3</option>
+                            <option value="v4">val 4</option>
+                        </select>
+                      </div>
+                       <div class="form-group col-sm-8">
+                        <label for="pl_what">What</label>
+                        <select id="pl_what" class="form-control">
+                            <option value=""></option>
+                            <option value="v1">val 1</option>
+                            <option value="v2">val 2</option>
+                            <option value="v3">val 3</option>
+                            <option value="v4">val 4</option>
+                        </select>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-24">
+                        <label for="pl_referred">Referred by</label>
+                        <input type="text" class="form-control" id="pl_referred" placeholder="Referred by">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-sm-24">
+                        <label for="pl_notes">Notes</label>
+                        <textarea class="form-control" id="pl_notes" rows="3"></textarea>
+                    </div>
+                </div>
+            </fieldset>
+            </div>
+
+            <!-- right sidebar -->
+            <div class="col-sm-6 right-sidebar">
+                <input class="btn btn-default" type="button" value="Script">
+                <input class="btn btn-default" type="button" value="Related">
+                <input class="btn btn-default" type="button" value="Schedule">
+                <input class="btn btn-default" type="button" value="Tags">
+                <input class="btn btn-default" type="button" value="Pay">
+
+                <div class="panel panel-default">
+                  <div class="panel-heading">Wedding Script<a href="" class="bright"><span class="glyphicon glyphicon-minus right"></span></a></div>
+                  <div class="panel-body">
+                    <p>While the two headsmen were engaged in making fast cords to his flukes, and in other ways getting the mass in readiness for towing, some conversation ensued between them.</p>
+
+<p>"I wonder what the old man wants with this lump of foul lard," said Stubb, not without some disgust at the thought of having to do with so ignoble a leviathan.</p>
+                  </div>
+                </div>
+                <div><a href=""><span class="glyphicon glyphicon-plus primary"/></a></div>
+            </div><!-- end sidebar -->
+        </div><!-- end main body -->
+        </div><!-- edn container -->
+
+        <!-- footer -->
+        <footer>
+        <div class="container">
+            <div class="footer" class="row">
+                <div class="col-sm-12">
+                    <p>
+                        © Photolifeline.com. All rights reserved.
+                    </p>
+                </div>
+                <div class="col-sm-12">
+                    <div class="right">
+                        <a href="contact.aspx" class="btn btn-default">Contact Us</a>
+                    <a href="help.aspx" class="btn btn-default">Help</a>
+                    </div>
                 </div>
             </div>
         </div>
+            
+        </footer>
+        
         
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-2.1.1.min.js"><\/script>')</script>
         <script src="includes/js/vendor/bootstrap.min.js"></script>
+        <script src="includes/js/vendor/moment.min.js"></script>
+        <script src="includes/js/vendor/bootstrap-datetimepicker.min.js"></script>
         <script src="includes/js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

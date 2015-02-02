@@ -1,0 +1,169 @@
+/* main site web styles */
+/* common colors used in site */
+/* line 6, ../scss/style.scss */
+.primary {
+  color: #869de5;
+}
+
+/* line 10, ../scss/style.scss */
+.bright {
+  color: #fff;
+}
+
+/* line 14, ../scss/style.scss */
+body {
+  margin-top: 12px;
+}
+
+/* line 18, ../scss/style.scss */
+p, label, td {
+  color: #869de5;
+}
+
+/* line 22, ../scss/style.scss */
+div#main-selector {
+  border: 1px solid #869de5;
+  padding: 0px;
+}
+
+/* line 27, ../scss/style.scss */
+#main-selector div.checkbox {
+  padding: 12px;
+  border-bottom: 1px solid #869de5;
+}
+
+/* line 32, ../scss/style.scss */
+input[type=checkbox].form-control {
+  border: none;
+  box-shadow: none;
+}
+
+/* line 37, ../scss/style.scss */
+.btn-default {
+  color: #fff;
+  background-color: #869de5;
+  border-color: #869de5;
+}
+
+/* header area */
+/* line 45, ../scss/style.scss */
+div#logo {
+  border: 1px solid #869de5;
+  display: inline-block;
+}
+
+/* line 50, ../scss/style.scss */
+div#account_btns {
+  text-align: right;
+}
+
+/* line 54, ../scss/style.scss */
+div.search_area {
+  margin-top: 1em;
+}
+
+/* line 58, ../scss/style.scss */
+div#welcome {
+  margin-top: 2em;
+}
+
+/* line 62, ../scss/style.scss */
+nav.navbar-default {
+  margin-top: 1em;
+}
+
+/* line 66, ../scss/style.scss */
+.nav li > a.last {
+  border: none;
+}
+
+/* line 70, ../scss/style.scss */
+.nav li > a > span:before {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+/* line 75, ../scss/style.scss */
+div.right-sidebar {
+  border-left: 1px solid #869de5;
+  height: 100%;
+}
+/* line 78, ../scss/style.scss */
+div.right-sidebar input[type=button] {
+  margin: 3px;
+}
+
+/* line 83, ../scss/style.scss */
+.panel-body {
+  color: #869de5;
+}
+
+/* line 87, ../scss/style.scss */
+.panel-default > .panel-heading {
+  color: #fff;
+}
+
+/* line 91, ../scss/style.scss */
+.right {
+  float: right;
+}
+
+/* line 95, ../scss/style.scss */
+.left {
+  float: left;
+}
+
+/* line 99, ../scss/style.scss */
+#main-selector div.checkbox {
+  margin: 0px;
+}
+
+/* line 103, ../scss/style.scss */
+fieldset#pl {
+  background-color: #e4eafe;
+}
+/* line 105, ../scss/style.scss */
+fieldset#pl legend {
+  float: left;
+}
+
+/* line 110, ../scss/style.scss */
+footer {
+  margin-top: 1em;
+  background-color: #e4eafe;
+  border-top: 1px solid #869de5;
+  width: 100%;
+}
+/* line 115, ../scss/style.scss */
+footer div.footer {
+  padding: 1em 1em;
+  margin-bottom: 2em;
+}
+
+@media (min-width: 768px) {
+  /* line 3, ../scss/_min_768.scss */
+  .nav li > a {
+    font-size: .9em;
+    border-right: 1px solid #fff;
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 3, ../scss/_min_992.scss */
+  .nav li > a {
+    font-size: 1em;
+    border-right: 1px solid #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  /* line 3, ../scss/_min_1200.scss */
+  .nav li > a {
+    font-size: 1.25em;
+    border-right: 1px solid #fff;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
