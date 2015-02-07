@@ -15,8 +15,13 @@ body {
 	margin-top: 12px;
 }
 
-p, label, td {
+p, label, td, .label {
 	color: $brand_color;
+}
+
+div#center {
+    height: 650px;
+    overflow: scroll;
 }
 
 div#main-selector {
