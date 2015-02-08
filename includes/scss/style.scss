@@ -19,6 +19,10 @@ p, label, td, .label {
 	color: $brand_color;
 }
 
+div.checkbox label label {
+	margin-left: -18px;
+}
+
 div#center {
     height: 650px;
     overflow: scroll;
@@ -30,8 +34,13 @@ div#main-selector {
 }
 
 #main-selector div.checkbox {
-	padding: 12px;
+	padding: 8px;
 	border-bottom: 1px solid $brand_color;
+}
+
+span.label {
+	font-size: 12px;
+	display: block;
 }
 
 input[type=checkbox].form-control {
