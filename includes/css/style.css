@@ -26,36 +26,41 @@ div.checkbox label label {
 }
 
 /* line 26, ../scss/style.scss */
+span.label {
+  text-align: left;
+}
+
+/* line 30, ../scss/style.scss */
 div#center {
   height: 650px;
   overflow: scroll;
 }
 
-/* line 31, ../scss/style.scss */
+/* line 35, ../scss/style.scss */
 div#main-selector {
   border: 1px solid #869de5;
   padding: 0px;
 }
 
-/* line 36, ../scss/style.scss */
+/* line 40, ../scss/style.scss */
 #main-selector div.checkbox {
   padding: 8px;
   border-bottom: 1px solid #869de5;
 }
 
-/* line 41, ../scss/style.scss */
+/* line 45, ../scss/style.scss */
 span.label {
   font-size: 12px;
   display: block;
 }
 
-/* line 46, ../scss/style.scss */
+/* line 50, ../scss/style.scss */
 input[type=checkbox].form-control {
   border: none;
   box-shadow: none;
 }
 
-/* line 51, ../scss/style.scss */
+/* line 55, ../scss/style.scss */
 .btn-default {
   color: #fff;
   background-color: #869de5;
@@ -63,95 +68,95 @@ input[type=checkbox].form-control {
 }
 
 /* header area */
-/* line 59, ../scss/style.scss */
+/* line 63, ../scss/style.scss */
 div#logo {
   border: 1px solid #869de5;
   display: inline-block;
 }
 
-/* line 64, ../scss/style.scss */
+/* line 68, ../scss/style.scss */
 div#account_btns {
   text-align: right;
 }
 
-/* line 68, ../scss/style.scss */
+/* line 72, ../scss/style.scss */
 div.search_area {
   margin-top: 1em;
 }
 
-/* line 72, ../scss/style.scss */
+/* line 76, ../scss/style.scss */
 div#welcome {
   margin-top: 2em;
 }
 
-/* line 76, ../scss/style.scss */
+/* line 80, ../scss/style.scss */
 nav.navbar-default {
   margin-top: 1em;
 }
 
-/* line 80, ../scss/style.scss */
+/* line 84, ../scss/style.scss */
 .nav li > a.last {
   border: none;
 }
 
-/* line 84, ../scss/style.scss */
+/* line 88, ../scss/style.scss */
 .nav li > a > span:before {
   display: inline-block;
   margin-right: 6px;
 }
 
-/* line 89, ../scss/style.scss */
+/* line 93, ../scss/style.scss */
 div.right-sidebar {
   border-left: 1px solid #869de5;
   height: 100%;
 }
-/* line 92, ../scss/style.scss */
+/* line 96, ../scss/style.scss */
 div.right-sidebar input[type=button] {
   margin: 3px;
 }
 
-/* line 97, ../scss/style.scss */
+/* line 101, ../scss/style.scss */
 .panel-body {
   color: #869de5;
 }
 
-/* line 101, ../scss/style.scss */
+/* line 105, ../scss/style.scss */
 .panel-default > .panel-heading {
   color: #fff;
 }
 
-/* line 105, ../scss/style.scss */
+/* line 109, ../scss/style.scss */
 .right {
   float: right;
 }
 
-/* line 109, ../scss/style.scss */
+/* line 113, ../scss/style.scss */
 .left {
   float: left;
 }
 
-/* line 113, ../scss/style.scss */
+/* line 117, ../scss/style.scss */
 #main-selector div.checkbox {
   margin: 0px;
 }
 
-/* line 117, ../scss/style.scss */
+/* line 121, ../scss/style.scss */
 fieldset#pl {
   background-color: #e4eafe;
 }
-/* line 119, ../scss/style.scss */
+/* line 123, ../scss/style.scss */
 fieldset#pl legend {
   float: left;
 }
 
-/* line 124, ../scss/style.scss */
+/* line 128, ../scss/style.scss */
 footer {
   margin-top: 1em;
   background-color: #e4eafe;
   border-top: 1px solid #869de5;
   width: 100%;
 }
-/* line 129, ../scss/style.scss */
+/* line 133, ../scss/style.scss */
 footer div.footer {
   padding: 1em 1em;
   margin-bottom: 2em;

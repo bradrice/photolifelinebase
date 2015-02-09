@@ -26,7 +26,10 @@ $('.btn-toggle').click(function() {
 });
 
 $("#main-selector input[type=checkbox]").on('click', function() {
-	if($("#main-selector input:checked")){
+	if($(this).prop('checked')==true){
 		$(this).closest('.checkbox').css('background-color', '#e4eafe');
 	}
+    else{
+        $(this).closest('.checkbox').css('background-color', '#fff');
+    }
 });
