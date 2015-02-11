@@ -1,7 +1,9 @@
 // site specific javascript here
 
 $(function () {
-    $('#datetimepicker1').datetimepicker();
+    $('#datetimepicker1').datetimepicker(
+        {"format": 'MM/d/YYYY'}
+        );
 });
 
 
@@ -33,3 +35,12 @@ $("#main-selector input[type=checkbox]").on('click', function() {
         $(this).closest('.checkbox').css('background-color', '#fff');
     }
 });
+
+//check for checked at runtime
+(function(){
+    console.log("running iffy");
+    $("#main-selector input[type=checkbox]").each(function(i, obj){
+    if($(obj).prop('checked')==true){
+        $(obj).closest('.checkbox').css('background-color', '#e4eafe');
+    }});
+})();
